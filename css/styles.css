@@ -506,4 +506,80 @@ button {
 .footer-icon {
   fill: var(--cloud);
 }
+
+::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
 /* ---------FOOTER--------- */
+/* ---------MODAL--------- */
+/* .backdrop {} */
+
+.modal {
+  position: absolute;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: var(--dairy);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 72px 24px 24px 24px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+/* .modal-close-icon {} */
+
+.modal-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+/* .modal-form {} */
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+/* .modal-label {} */
+
+.modal-input {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+}
+
+.modal-icon {
+  fill: var(--navy-blue);
+}
+
+/* .modal-input:required {
+  background-color: var(--iris);
+} */
+
+.modal-textarea {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  resize: none;
+}
+
+.modal-send-btn {
+  display: block;
+  margin: 0 auto;
+}
