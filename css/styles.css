@@ -549,6 +549,7 @@ button {
 }
 
 .footer-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -556,7 +557,7 @@ button {
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;
-  border: 0;
+  border: none;
   padding: 8px 64px 8px 24px;
   position: relative;
 }
@@ -714,6 +715,9 @@ button {
 .modal-send-btn {
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -724,7 +728,7 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
   color: var(--white);
-  border: 0;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
