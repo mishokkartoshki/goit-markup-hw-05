@@ -506,14 +506,6 @@ button {
 .footer-icon {
   fill: var(--cloud);
 }
-
-::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-}
 /* ---------FOOTER--------- */
 /* ---------MODAL--------- */
 .backdrop {
@@ -590,6 +582,7 @@ button {
   padding-left: 38px;
   color: var(--navy-blue);
   outline: transparent;
+  transition: border-color;
 }
 
 /* .modal-input:required {} */
@@ -621,9 +614,13 @@ button {
   height: 120px;
   background-color: transparent;
   padding: 8px 16px;
-  color: var(--navy-blue-modal);
+  color: var(--navy-blue);
   outline: transparent;
   resize: none;
+}
+
+.modal-textarea:focus {
+  border-color: var(--iris);
 }
 
 .modal-send-btn {
