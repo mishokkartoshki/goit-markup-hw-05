@@ -446,11 +446,26 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form>
-            <p></p>
-            <input type="text" name="user-email" class="" />
-            <button type="submit"></button>
+        <div class="footer-form-box">
+          <form class="footer-form">
+            <div class="footer-input-box">
+              <label for="user-email" class="footer-input-label">
+                Subscribe
+              </label>
+              <input
+                type="text"
+                name="user-email"
+                class="footer-input"
+                id="user-email"
+                placeholder="E-mail"
+              />
+            </div>
+            <button type="submit" class="footer-btn">
+              Subscribe
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
