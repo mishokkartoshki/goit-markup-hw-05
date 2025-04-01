@@ -516,10 +516,14 @@ button {
 }
 /* ---------FOOTER--------- */
 /* ---------MODAL--------- */
-/* .backdrop {} */
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
 
 .modal {
-  position: absolute;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -531,14 +535,6 @@ button {
   padding: 72px 24px 24px 24px;
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-
-/* .modal-close-icon {} */
-
 .modal-title {
   text-align: center;
   font-weight: 500;
@@ -546,6 +542,25 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 16px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 100%;
+  background-color: var(--cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-close-icon {
+  fill: var(--navy-blue);
 }
 
 /* .modal-form {} */
@@ -554,32 +569,75 @@ button {
   margin-bottom: 8px;
 }
 
-/* .modal-label {} */
+.modal-label {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
 
 .modal-input {
-  display: inline-block;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
   width: 100%;
   height: 40px;
+  background-color: transparent;
   padding-left: 38px;
+  color: var(--navy-blue);
+  outline: transparent;
+}
+
+/* .modal-input:required {} */
+
+.modal-input:focus {
+  border-color: var(--iris);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--iris);
+}
+
+.modal-textarea::placeholder {
+  color: var(--navy-blue-modal);
 }
 
 .modal-icon {
   fill: var(--navy-blue);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* .modal-input:required {
-  background-color: var(--iris);
-} */
-
 .modal-textarea {
-  display: inline-block;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
   width: 100%;
-  height: 40px;
+  height: 120px;
+  background-color: transparent;
   padding: 8px 16px;
+  color: var(--navy-blue-modal);
+  outline: transparent;
   resize: none;
 }
 
 .modal-send-btn {
   display: block;
   margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+  color: var(--white);
+  border: none;
 }
