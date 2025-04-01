@@ -611,10 +611,20 @@ button {
   justify-content: center;
   width: 24px;
   height: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover {
+  background-color: var(--ocean);
+}
+
+.modal-close-btn:hover .modal-close-icon {
+  fill: var(--white);
 }
 
 .modal-close-icon {
   fill: var(--navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .modal-form {} */
