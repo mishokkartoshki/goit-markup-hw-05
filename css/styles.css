@@ -526,8 +526,12 @@ button {
 }
 
 .footer-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
   background-color: transparent;
-  width: 100%;
+  width: 264px;
   height: 40px;
   border: 1px solid var(--white);
   border-radius: 4px;
@@ -744,7 +748,7 @@ button {
   margin-bottom: 24px;
 }
 
-/* .modal-checkbox {} */
+/* .user-privacy {} */
 
 .modal-agree-label {
   display: flex;
@@ -773,13 +777,13 @@ button {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox:checked + .modal-agree-label > .modal-agree {
+.user-privacy:checked + .modal-agree-label > .modal-agree {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
 }
 
-/* .modal-checkbox:checked + .modal-agree-label > .modal-agree > .icon-check {
+/* .user-privacy:checked + .modal-agree-label > .modal-agree > .icon-check {
   fill: var(--cloud);
 }
  */
