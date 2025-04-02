@@ -765,33 +765,33 @@ button {
 }
 
 .modal-agree {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid var(--navy-blue-modal);
   margin-right: 8px;
-  background-color: transparent;
   cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--navy-blue-modal);
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-agree-label > .modal-agree {
   background-color: var(--ocean);
-}
-
-.modal-checkbox:checked + .modal-agree-label > .modal-agree > .icon-check {
+  border: none;
   fill: var(--cloud);
 }
 
-/* .modal-agree:focus .icon-check {
+/* .modal-checkbox:checked + .modal-agree-label > .modal-agree > .icon-check {
   fill: var(--cloud);
-} */
-
-.icon-check {
-  fill: transparent;
 }
+ */
+/* .icon-check {} */
 
 .modal-policy {
   line-height: 1.33;
