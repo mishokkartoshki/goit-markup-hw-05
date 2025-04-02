@@ -54,7 +54,9 @@
       <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="features section">
@@ -447,18 +449,18 @@
           </ul>
         </div>
         <div class="footer-form-box">
+          <p class="footer-form-text">Subscribe</p>
           <form class="footer-form">
             <div class="footer-input-box">
-              <label for="footer-user-email" class="footer-input-label">
-                Subscribe
+              <label class="footer-input-label">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="footer-input"
+                  id="footer-user-email"
+                  placeholder="E-mail"
+                />
               </label>
-              <input
-                type="text"
-                name="user-email"
-                class="footer-input"
-                id="footer-user-email"
-                placeholder="E-mail"
-              />
             </div>
             <button type="submit" class="footer-btn">
               Subscribe
@@ -470,9 +472,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -533,9 +535,30 @@
               placeholder="Text input"
             ></textarea>
           </div>
+          <div class="modal-checkbox-box">
+            <input
+              type="checkbox"
+              name="modal-checkbox"
+              id="modal-checkbox"
+              class="modal-checkbox visually-hidden"
+              required
+            />
+            <label for="modal-checkbox" class="modal-agree-label">
+              <span class="modal-agree">
+                <svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p>
+                I accept the terms and conditions of the
+                <a href="" class="modal-policy">Privacy Policy</a>
+              </p>
+            </label>
+          </div>
           <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
