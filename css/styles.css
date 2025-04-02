@@ -522,15 +522,8 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
-
-.footer-input-box {
-  display: flex;
-  flex-direction: column;
-  margin-right: 24px;
-}
-
-/* .footer-input-label {} */
 
 .footer-input {
   background-color: transparent;
@@ -566,9 +559,11 @@ button {
   background-color: var(--iris);
   border-radius: 4px;
   border: none;
-  padding: 8px 64px 8px 24px;
-  max-height: 40px;
-  position: relative;
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -579,10 +574,7 @@ button {
 }
 
 .icon-subscribe {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 16px;
   fill: var(--white);
 }
 /* ---------FOOTER--------- */
